@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	 
+}
+
+#logo{
+	width: 136px;
+	height: 50px;
+	float: left;
+}
+
+#image{
+	background: url(../imagen/viajar.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+
+#credito{
+	padding-top: 1px;
+}
+.inicio{
+	text-decoration: none;
+	color: #E5EFF0;
+}
+
+.grid_container{
+	display: grid;
+	gap: 1px;
+	grid-template: 
+	"header" 50px
+	"navbar" 40px
+	"main"	auto
+	"formulario" auto
+	"footer" 50px
+	;
+}
+
+.header{
+	grid-area: header;
+	width: 99%;
+	height: 54px;
+	padding-left: 1%;
+	padding-top: 1%;
+	
+}
+
+.navbar{
+	grid-area: navbar;
+	
+}
+
+.main{
+	grid-area: main;
+	
+}
+
+.formulario{
+	grid-area: formulario;
+	
+}
+
+.footer{
+	grid-area: footer;
+	
+}
+
+#formugana{
+	float: left;
+	position: relative;
+	
+	left: 5%;
+	padding: 15px;
+	width: 300px;
+	background-color: rgba(246, 229, 141, 0.5);
+	border-radius: 15px;
+	border: 2px solid #f0932b;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+.enviar{
+	width: 100%;
+	height: 35px;
+	border: none;
+	color: #E5EFF0;
+	background-color: #f0932b; 
+	font-size: 18px;
+	margin: 4px 2px;
+	float: right;
+	border-radius: 10px;
+}
+
+ .etiqueta {
+ 	color: #272727;
+ }
+
+  .anchoform{
+ 	width: 100%
+ }
+
+@media (min-width: 600px) {
+
+
+	.grid_container{
+
+		grid-template: 
+		"header 	header" 	50px 
+		"navbar 	navbar" 	40px
+		"main 		formulario" 		auto
+		"footer 	footer" 	50px /
+		 auto 		300px;
+ 	}
+
+ 	#formugana{
+	float: left;
+	position: relative;
+	top: 20%;
+	left: -20%;
+	padding: 15px;
+	width: 300px;
+	background-color: rgba(246, 229, 141, 0.5);
+	border-radius: 15px;
+	border: 2px solid #f0932b;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+}
+
+
+@media (min-width: 900px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	header" 	50px 
+		"navbar 	main 	formulario" 	auto
+		"footer 	footer 	footer" 	50px /
+		 auto 		auto 	400px;
+	}
+}
