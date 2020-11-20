@@ -12,7 +12,7 @@ html{
 
 body{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	min-height: 100%; 
 	 
 }
@@ -20,7 +20,8 @@ body{
 #logo{
 	width: 136px;
 	height: 50px;
-	float: left;
+	position: relative;
+	left: 2%;
 }
 
 #image{
@@ -33,26 +34,20 @@ body{
 #credito{
 	padding-top: 1px;
 }
+
 .inicio{
 	text-decoration: none;
 	color: #E5EFF0;
 }
 
-.grid_container{
-	display: grid;
-	gap: 1px;
-	grid-template: 
-	"header" 50px
-	"navbar" 40px
-	"main"	auto
-	"formulario" auto
-	"footer" 50px
-	;
+.compartir{
+	float: left;
+	width: 150px;
 }
 
 .header{
 	grid-area: header;
-	width: 99%;
+	width: 100%;
 	height: 54px;
 	padding-left: 1%;
 	padding-top: 1%;
@@ -76,41 +71,98 @@ body{
 
 .footer{
 	grid-area: footer;
+	padding-top: 10px;
+	background-color: rgba(44, 62, 80,0.75)
+}
+
+@media (min-width: 400px) {
+	.grid_container{
+		display: grid;
+
+		grid-template: 
+		"header" 60px
+		"navbar" 50px
+		"main"	auto
+		"formulario" auto
+		"footer" 50px
+		;
+	}
+
+	.participa{
+		position: relative;
+		top: 20%;
+		left: 3%;
+		width: 300px;
+		font-size: 16pt;
+		color: #d35400;
+	}
+
+	.viaje{
+		position: relative;
+		top: 15%;
+		left: 3%;
+		width: 300px;
+		font-size: 18pt;
+		color: #d35400;
+	}
+
+	.resumen{
+		position: relative;
+		top: 20%;
+		left: 3%;
+		width: 280px;	
+		font-size: 10pt;
+		color: #2c3e50;
+	}
+
+	.maravillas{
+		position: relative;
+		top: 15%;
+		left: 3%;
+		width: 300px;	
+		font-size: 12pt;
+		color: #2c3e50;
+	}
+
+	#formugana{
+		position: relative;
+		top: 12%;
+		left: 3%;
+		padding: 15px;
+		width: 400px;
+		background-color: rgba(246, 229, 141, 0.5);
+		border-radius: 15px;
+		border: 2px solid #f0932b;
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+	}
+
+	.enviar{
+		width: 100%;
+		height: 30px;
+		border: none;
+		color: #E5EFF0;
+		background-color: #d35400; 
+		font-size: 15px;
+		margin: 4px 2px;	
+		border-radius: 10px;
+	}
 	
+	.enviar:hover{
+		color: #d35400;
+		background-color: #E5EFF0;
+	}
+
+	.etiqueta {
+ 		color: #272727;
+ 		font-size: 10pt;
+ 	}
+
+	.anchoform{
+ 		width: 100%
+	}
+
 }
 
-#formugana{
-	float: left;
-	position: relative;
-	
-	left: 5%;
-	padding: 15px;
-	width: 300px;
-	background-color: rgba(246, 229, 141, 0.5);
-	border-radius: 15px;
-	border: 2px solid #f0932b;
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-}
-
-.enviar{
-	width: 100%;
-	height: 35px;
-	border: none;
-	color: #E5EFF0;
-	background-color: #f0932b; 
-	font-size: 18px;
-	margin: 4px 2px;
-	float: right;
-	border-radius: 10px;
-}
-
- .etiqueta {
- 	color: #272727;
- }
-
-  .anchoform{
- 	width: 100%
- }
 
 @media (min-width: 600px) {
 
@@ -119,34 +171,172 @@ body{
 
 		grid-template: 
 		"header 	header" 	50px 
-		"navbar 	navbar" 	40px
+		"navbar 	navbar" 	70px
 		"main 		formulario" 		auto
 		"footer 	footer" 	50px /
-		 auto 		300px;
+		 auto 		350px;
  	}
 
- 	#formugana{
-	float: left;
-	position: relative;
-	top: 20%;
-	left: -20%;
-	padding: 15px;
-	width: 300px;
-	background-color: rgba(246, 229, 141, 0.5);
-	border-radius: 15px;
-	border: 2px solid #f0932b;
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-}
+	.participa{
+		position: relative;
+		top: -50%;
+		left: 52%;
+		width: 500px;
+		text-shadow: 2px 2px 4px #000000;
+		font-size: 25pt;
+		color: #d35400;
+	}
+
+	.viaje{
+		position: relative;
+		top: 8%;
+		left: 15%;
+		width: 950px;
+		text-shadow: 3px 3px 5px #000000;
+		font-size: 35pt;
+		color: #d35400;
+	}
+
+	.resumen{
+		position: relative;
+		top: -45%;
+		left: 52%;
+		width: 410px;	
+		font-size: 15pt;
+		color: #2c3e50;
+	}
+
+	.maravillas{
+		position: relative;
+		top: 5%;
+		left: 4%;
+		width: 300px;	
+		font-size: 25pt;
+		color: #2c3e50;
+	}
+
+	#formugana{
+		position: relative;
+		top: 5%;
+		left: 5%;
+		padding: 15px;
+		width: 300px;
+		background-color: rgba(246, 229, 141, 0.5);
+		border-radius: 15px;
+		border: 2px solid #f0932b;
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+	}
+
+	.enviar{
+		width: 100%;
+		height: 35px;
+		border: none;
+		color: #E5EFF0;
+		background-color: #d35400; 
+		font-size: 18px;
+		margin: 4px 2px;
+		
+		border-radius: 10px;
+	}
+
+	.enviar:hover{
+		color: #d35400;
+		background-color: #E5EFF0;
+	}
+
+	.etiqueta {
+ 		color: #272727;
+ 		font-size: 12pt;
+ 	}
+
+	.anchoform{
+ 		width: 100%
+	}
 
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 1300px) {
 	.grid_container{
 		grid-template: 
 		"header 	header 	header" 	50px 
 		"navbar 	main 	formulario" 	auto
 		"footer 	footer 	footer" 	50px /
 		 auto 		auto 	400px;
+	}
+
+	.participa{
+		position: relative;
+		top: 3%;
+		left: 15%;
+		width: 500px;
+		text-shadow: 2px 2px 4px #000000;
+		font-size: 25pt;
+		color: #d35400;
+	}
+
+	.viaje{
+		position: relative;
+		top: 8%;
+		left: 8%;
+		width: 400px;
+		text-shadow: 3px 3px 5px #000000;
+		font-size: 40pt;
+		color: #d35400;
+	}
+
+	.resumen{
+		position: relative;
+		top: 5%;
+		left: 15%;
+		width: 520px;	
+		font-size: 15pt;
+		color: #2c3e50;
+	}
+
+	.maravillas{
+		position: relative;
+		top: -1%;
+		left: 15%;
+		width: 600px;	
+		font-size: 25pt;
+		color: #2c3e50;
+	}
+
+	#formugana{
+		position: relative;
+		top: 5%;
+		left: 5%;
+		padding: 15px;
+		width: 350px;
+		background-color: rgba(246, 229, 141, 0.5);
+		border-radius: 15px;
+		border: 2px solid #f0932b;
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+	}
+
+	.enviar{
+		width: 100%;
+		height: 35px;
+		border: none;
+		color: #E5EFF0;
+		background-color: #d35400; 
+		font-size: 18px;
+		margin: 4px 2px;
+		border-radius: 10px;
+	}
+
+	.enviar:hover{
+		color: #d35400;
+		background-color: #E5EFF0;
+	}
+
+	.etiqueta {
+ 		color: #272727;
+ 		font-size: 12pt;
+ 	}
+
+	.anchoform{
+ 		width: 100%
 	}
 }
