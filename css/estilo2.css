@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1rem;
+	min-height: 100%; 
+	 
+}
+
+#logo{
+	position: relative;
+	left: 2%;
+}
+
+#image{
+	background: url(../imagen/tablero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+
+#credito{
+	padding-top: 1px;
+}
+
+.inicio{
+	text-decoration: none;
+	color: #E5EFF0;
+}
+
+.header{
+	grid-area: header;
+	width: 100%;
+	padding-left: 1%;
+	padding-top: 1%;
+	background-color: rgba(44, 62, 80,0.75)
+	
+}
+
+#menu{
+	padding: 0;
+	width: 38%;
+	height: 40px;
+	position: relative;
+	top: -40%;
+	left: 30%;
+}
+
+#menu li{
+	display: inline-block;
+	
+}
+
+#menu li a{
+	width: 120px;
+	font-size: 14pt;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	padding: 5px;
+	color: #000000;
+	background-color: #f0932b;
+}
+
+ #menu li a:hover{
+ 	background-color: #000000;
+ 	color: #f0932b;
+ }
+
+.navbar{
+	grid-area: navbar;
+	
+}
+
+.main{
+	grid-area: main;
+	
+}
+
+.formulario{
+	grid-area: formulario;
+	
+}
+
+.footer{
+	grid-area: footer;
+	padding-top: 10px;
+	background-color: rgba(44, 62, 80,0.75)
+}
+
+@media (min-width: 400px) {
+	.grid_container{
+		display: grid;
+
+		grid-template: 
+		"header" 70px
+		"navbar" 40px
+		"main"	auto
+		"formulario" auto
+		"footer" 50px
+		;
+	}
+
+	.viaje{
+		position: relative;
+		top: 15%;
+		left: 3%;
+		width: 300px;
+		font-size: 18pt;
+		color: #d35400;
+	}
+
+	.resumen{
+		position: relative;
+		top: 15%;
+		left: 3%;
+		width: 280px;	
+		font-size: 10pt;
+		color: #2c3e50;
+	}
+
+	.maravillas{
+		position: relative;
+		top: 5%;
+		left: 3%;
+		width: 300px;	
+		font-size: 12pt;
+		color: #2c3e50;
+	}
+
+		#galeria{
+		
+		position: relative;
+		
+		top: 1%;
+		left: 8%;
+	}
+
+	#galeria li{
+		display: inline-block;
+		padding-top: 2%;
+	}
+
+	#galeria li a{
+	 	width: 180px;
+	}
+
+	.anchogaleria{
+	width: 180px;
+	}
+		.color1{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #d35400;
+	}
+
+	.color2{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #2c3e50;
+	}
+	.color3{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #f39c12;
+	}
+
+}
+
+
+@media (min-width: 600px) {
+
+
+	.grid_container{
+
+		grid-template: 
+		"header 	header" 	50px 
+		"navbar 	navbar" 	70px
+		"main 		formulario" 		auto
+		"footer 	footer" 	50px /
+		 auto 		350px;
+ 	}
+
+	.viaje{
+		position: relative;
+		top: 8%;
+		left: 15%;
+		width: 950px;
+		text-shadow: 3px 3px 5px #000000;
+		font-size: 35pt;
+		color: #d35400;
+	}
+
+	.resumen{
+		position: relative;
+		top: 5%;
+		left: 25%;
+		width: 410px;	
+		font-size: 15pt;
+		color: #2c3e50;
+	}
+
+	.maravillas{
+		position: relative;
+		top: 1%;
+		left: 25%;
+		width: 300px;	
+		font-size: 25pt;
+		color: #2c3e50;
+	}
+
+	.color1{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #d35400;
+	}
+
+	.color2{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #2c3e50;
+	}
+	.color3{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #f39c12;
+	}
+
+}
+
+
+@media (min-width: 1300px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	header" 	50px 
+		"navbar 	main 	formulario" 	auto
+		"footer 	footer 	footer" 	50px /
+		 auto 		auto 	400px;
+	}
+
+
+	.viaje{
+		position: relative;
+		top: 8%;
+		left: 8%;
+		width: 400px;
+		text-shadow: 3px 3px 5px #000000;
+		font-size: 40pt;
+		color: #d35400;
+	}
+
+	.resumen{
+		position: relative;
+		top: 25%;
+		left: 15%;
+		width: 520px;	
+		font-size: 15pt;
+		color: #2c3e50;
+	}
+
+	.maravillas{
+		position: relative;
+		top: 10%;
+		left: 15%;
+		width: 600px;	
+		font-size: 25pt;
+		color: #2c3e50;
+	}
+
+	#galeria{
+		
+		position: relative;
+		width: 90%
+		top: 5%;
+		left: 5%;
+	}
+
+	#galeria li{
+		display: inline-block;
+		padding-top: 2%;
+	}
+
+	#galeria li a{
+	 	width: 200px;
+	}
+
+	.anchogaleria{
+	width: 200px;
+	}
+		.color1{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #d35400;
+	}
+
+	.color2{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #2c3e50;
+	}
+	.color3{
+		position: relative;
+		padding: 5px;
+		top: 1%;
+		left: 25%;
+		width: 200px;	
+		font-size: 15pt;
+		color: #ffffff;
+		background-color: #f39c12;
+	}
+
+}
