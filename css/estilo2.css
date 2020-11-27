@@ -161,7 +161,7 @@ body{
 		.color1{
 		position: relative;
 		padding: 5px;
-		top: 1%;
+		top: 10%;
 		left: 25%;
 		width: 200px;
 		height: 100px;	
@@ -173,7 +173,7 @@ body{
 	.color2{
 		position: relative;
 		padding: 5px;
-		top: 1%;
+		top: 10%;
 		left: 25%;
 		width: 200px;
 		height: 100px;	
@@ -184,7 +184,7 @@ body{
 	.color3{
 		position: relative;
 		padding: 5px;
-		top: 1%;
+		top: 10%;
 		left: 25%;
 		width: 200px;
 		height: 100px;	
