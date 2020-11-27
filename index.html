@@ -4,28 +4,21 @@
 	<title>Landing Page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fb68543efdc7a0012dc005d&product=inline-share-buttons" async="async"></script>
-		 <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
+
 <body id="image" class="grid_container">
 
+<header class="header"> 
+	<div id="logo"> <a href="index.html"> <img src="img/logo.png"></a></div>
 
-<header class="header">
-	<div id="logo"><a href="index.html"><img src="imagen/logo.png"></a></div> 
-</header>
-<nav class="navbar">
-	<div class="viaje">
-		Gana una estadia para cuatro personas.
-	</div>
-</nav>
-<aside class="formulario">
-	<div id="formugana">
+ </header>
+<aside class="sidebar"> 
+<section>
+			<div id="formugana">
 		<form method="post" action="mailto:jorgitoroyo@gmail.com">
-			<br>
 			<label class="etiqueta">Nombre y Apellido</label>
 			<br>
 			<input type="text" name="Nombre" required class="anchoform">
@@ -47,29 +40,40 @@
 			<textarea class="anchoform" rows="5"></textarea>
 			<br><br>
 			<div class="animate__animated animate__shakeY animate__delay-5s" >
-				<input type="submit" name="envio" value="Enviar" class="enviar">
+			<input type="submit" name="envio" value="Enviar" class="enviar">
 			</div>
 						
 		</form>
 		
 	</div>
+	</section>
+
 </aside>
 <article class="main">
-	<div class="maravillas">
-		Las 7 Maravillas Naturales Argentina celebra su primer aniversario regalando 7 estadias para cuatro personas.
-	</div>
-	<div class="participa">Cómo participar</div>
-
-	<div class="resumen">Para participar, los interesados deberán inscribirse en este formulario. Y para aumentar las chances de ganar, se los invita a compartir una foto de su paisaje natural favorito -siempre de la Argentina- y etiquetar a Visit 7 Mar en las redes sociales </div>
-</article>
-<footer class="footer">
-	<div class="compartir">
-		<div class="sharethis-inline-share-buttons"></div>
-	</div>
 	
-	<div id="credito">
-		<center><h4><a href="jorge_roldan.html" class="inicio">Jorge Roldan</a></h4></center></div>
-</footer>
+<div id="titulos">
+		<h1>Gana una estadias en tu lugar en el mundo</h1></div>
+
+		<div id="subtitulos">
+		En nuestro primer aniversario<br>lo festejamos regalando<br>5 estadias para cuatro personas.</div>
+
+<div id="participar">
+		<p>Para participar los interesados<br>deberan inscribirse en este formulario<br>Para aumentar las chances, comparte
+			<br>una foto de tu lugar en el mundo
+			<br>en nuestras redes sociales.</p></div>
+
+
+</article>
+
+<footer class="footer"> 
+
+	<a href="jorge_roldan.html"><h4>Jorge Roldan</h4></a> 
+	</div><div>
+	<p class="animate__animated animate__pulse animate__infinite" id="seguinos">Seguinos en</p>
+	 <a href="https://www.facebook.com/" target="_blank"> 
+	 <img src="img/facebook.png" class="redes"> </a>
+	
+ </footer>
 
 </body>
 </html>
