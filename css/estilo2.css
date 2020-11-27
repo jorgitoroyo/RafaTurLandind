@@ -23,7 +23,7 @@ body{
 }
 
 #image{
-	background: url(../imagen/tablero.jpg);
+	background: url(../img/tablero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
